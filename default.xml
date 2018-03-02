@@ -8,16 +8,11 @@
            revision="aosp-8.1" />
 
   <!-- Includes -->
-  <include name="aosp.xml" />
-  <include name="unlegacy.xml" />
-  <include name="vendor.xml" />
+  <include name="snippets/aosp.xml" />
+  <include name="snippets/unlegacy.xml" />
+  <include name="snippets/vendor.xml" />
 
   <!-- Include Devices -->
   <include name="devices/omap4.xml" />
-  <include name="devices/qcom.xml" />
-  <include name="devices/tegra3.xml" />
-  <include name="devices/tegra132.xml" />
-  
-  <include name="snippets/aosp.xml" />
   
 </manifest>
