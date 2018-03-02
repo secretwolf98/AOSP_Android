@@ -11,6 +11,7 @@
   <include name="snippets/aosp.xml" />
   <include name="snippets/unlegacy.xml" />
   <include name="snippets/vendor.xml" />
+  <include name="snippets/bn-common.xml" />
 
   <!-- Include Devices -->
   <include name="devices/omap4.xml" />
