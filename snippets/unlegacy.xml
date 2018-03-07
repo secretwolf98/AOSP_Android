@@ -9,20 +9,8 @@
 
   <!-- Replace build project to build kernel inline from the source -->
   <remove-project name="platform/build" />
-  <project path="build/make" name="Unlegacy-Android/android_build" remote="unlegacy" groups="pdk" >
+  <project path="build" name="Unlegacy-Android/android_build" remote="unlegacy" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
-  </project>
-
-  <remove-project name="platform/build/soong" />
-  <project path="build/soong" name="Unlegacy-Android/android_build_soong" remote="unlegacy" groups="pdk,tradefed" >
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
   <remove-project name="platform/bionic" />
@@ -35,22 +23,13 @@
   <project path="frameworks/native" name="Unlegacy-Android/android_frameworks_native" remote="unlegacy" groups="pdk" />
   <remove-project name="platform/hardware/broadcom/wlan" />
   <project path="hardware/broadcom/wlan" name="Unlegacy-Android/android_hardware_broadcom_wlan" remote="unlegacy" groups="pdk,broadcom_wlan" />
-  <remove-project name="platform/hardware/interfaces" />
-  <project path="hardware/interfaces" name="Unlegacy-Android/android_hardware_interfaces" remote="unlegacy" groups="pdk" />
-  <remove-project name="platform/hardware/ril" />
-  <project path="hardware/ril" name="Unlegacy-Android/android_hardware_ril" remote="unlegacy" groups="pdk" />
   <remove-project name="platform/system/bt" />
   <project path="system/bt" name="Unlegacy-Android/android_system_bt" remote="unlegacy" groups="pdk" />
   <remove-project name="platform/system/sepolicy" />
   <project path="system/sepolicy" name="Unlegacy-Android/android_system_sepolicy" remote="unlegacy" groups="pdk" />
-  <remove-project name="platform/system/nfc" />
-  <project path="system/nfc" name="Unlegacy-Android/android_system_nfc" remote="unlegacy" groups="pdk" />
-  <remove-project name="platform/packages/apps/Nfc" />
-  <project path="packages/apps/Nfc" name="Unlegacy-Android/android_packages_apps_Nfc" remote="unlegacy" groups="apps_nfc,pdk-fs" /> />
   <remove-project name="platform/system/core" />
   <project path="system/core" name="Unlegacy-Android/android_system_core" remote="unlegacy" groups="pdk" />
   <project path="external/stlport" name="Unlegacy-Android/android_external_stlport" remote="unlegacy" groups="pdk" />
-  <project path="external/boringssl-compat" name="Unlegacy-Android/android_external_sony_boringssl-compat" remote="unlegacy" groups="pdk" />
 
   <!-- Bring in Google GCC 4.7 -->
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" revision="master" groups="pdk,linux,arm" />
@@ -64,14 +43,19 @@
   <remove-project name="device/asus/fugu-kernel" />
   <remove-project name="device/google/dragon" />
   <remove-project name="device/google/dragon-kernel" />
-  <remove-project name="device/google/marlin" />
-  <remove-project name="device/google/marlin-kernel" />
+  <remove-project name="device/htc/flounder" />
+  <remove-project name="device/htc/flounder-kernel" />
   <remove-project name="device/huawei/angler" />
   <remove-project name="device/huawei/angler-kernel" />
+  <remove-project name="device/intel/edison" />
   <remove-project name="device/lge/bullhead" />
   <remove-project name="device/lge/bullhead-kernel" />
   <remove-project name="device/linaro/hikey" />
   <remove-project name="device/linaro/hikey-kernel" />
+  <remove-project name="device/moto/shamu" />
+  <remove-project name="device/moto/shamu-kernel" />
+  <remove-project name="device/google/marlin" />
+  <remove-project name="device/google/marlin-kernel" />
   <remove-project name="platform/packages/apps/Browser2" />
   <remove-project name="platform/packages/apps/Music" />
   <remove-project name="platform/packages/apps/QuickSearchBox" />
