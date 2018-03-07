@@ -1,7 +1,7 @@
 # AOSP_Android
 
-AOSP Oreo
-=========
+AOSP Nougat
+===========
 
 Getting Started
 ---------------
@@ -11,7 +11,7 @@ familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
 
 To initialize your local repository, use a command like this:
 
-    repo init -u git://github.com/secretwolf98/AOSP_Android.git -b aosp-8.1
+    repo init -u git://github.com/secretwolf98/AOSP_Android.git -b aosp-7.1
 
 Then to sync up:
 
