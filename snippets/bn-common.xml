@@ -1,10 +1,11 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
   <remote  name="airend" fetch="." revision="ng-14" />
 
   <remote  name="unlegacy" fetch="../Unlegacy-Android"
-           revision="aosp-8.1" />
+           revision="aosp-7.1" />
 
   <remote  name="github" fetch=".."
            revision="master" />
